@@ -20,7 +20,7 @@ if [ "${1}" = "stop" ] ; then
 fi
 
 # Step 1 : Pull latest version (can fail as needed if internet access unavailable)
-docker pull ixsystems/truecommand:latest
+docker pull "ixsystems/truecommand:${version}"
 
 # Step 2 : Start the container
 if [ ! -d "${datadir}" ] ; then
