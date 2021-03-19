@@ -32,7 +32,7 @@ do
   if [ -e "${instpath}" ] ; then
     rm "${instpath}"
   fi
-  wget https://raw.githubusercontent.com/iXsystems/truecommand-install/master/${relpath} -O "${instpath}"
+  wget https://raw.githubusercontent.com/iXsystems/truecommand-install/main/${relpath} -O "${instpath}"
   chmod 775 "${instpath}" #ensure it is executable by root/group
 done
 
