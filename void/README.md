@@ -1,4 +1,4 @@
-# Debian Setup Instructions
+# Void Linux Setup Instructions
 A list of instructions for installing TrueCommand on Void Linux.
 
 **Note** : Ensure you have the "wget" utility installed first: `xbps-install -y wget`
