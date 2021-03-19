@@ -22,5 +22,5 @@ This list is *not* exhaustive, please feel free to submit updates for other OS's
 The setup comes down to 3 pieces:
 
 1. Ensure that docker is installed
-2. Install the "start-truecommand" file from this repository and a service file for your OS
+2. Install the "start-truecommand" file from this repository [all/start-truecommand](all/start-truecommand) and a service file for your OS
 3. Enable the services
