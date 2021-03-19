@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sv start docker || exit 1
+exec /usr/bin/start-truecommmand service
