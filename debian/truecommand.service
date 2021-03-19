@@ -1,0 +1,13 @@
+# Contents of /etc/systemd/system/truecommand.service
+[Unit]
+Description=TrueCommand
+After=docker.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+ExecStart=/usr/local/bin/start-truecommand service
+ExecStop=/usr/local/bin/start-truecommand stop
+[Install]
+WantedBy=multi-user.target
