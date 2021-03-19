@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+depend() {
+	need docker
+}
+
+command="/usr/local/bin/start-truecommand"
+command_args="service"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"

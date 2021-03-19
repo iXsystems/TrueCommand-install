@@ -1,7 +1,7 @@
 # Debian Setup Instructions
-A list of instructions for installing TrueCommand on Debian OS's.
+A list of instructions for installing TrueCommand on Alpine Linux.
 
-**Note** : Ensure you have the "wget" utility installed first: `apt-get install wget`
+**Note** : Ensure you have the "wget" utility installed first: `apk add wget`
 
 Run this command (as root) from a system terminal
 
