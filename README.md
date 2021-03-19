@@ -14,9 +14,9 @@ This list is *not* exhaustive, please feel free to submit updates for other OS's
 
 | OS | Images | Architecture | Instructions | Notes |
 |:---:|:---:|:---:|:---:|:---:|
-|Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | |
-|Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 | | |
-|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 | | |
+|Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | Uses systemd service file|
+|Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 |[Setup Guide](alpine) | Uses OpenRC service file|
+|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses Runit service file|
 
 ## Manual Setup
 The setup comes down to 3 pieces:
