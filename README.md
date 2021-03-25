@@ -37,6 +37,7 @@ This list is *not* exhaustive, please feel free to submit updates for other OS's
 |Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | Uses systemd service file|
 |Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 |[Setup Guide](alpine) | Uses OpenRC service file|
 |Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses runit service file|
+|Windows| [Download Site](https://www.microsoft.com/en-us/software-download/windows10) | x64 |[Setup Guide](windows) | |
 
 ## Manual Setup
 The setup comes down to 3 pieces:
