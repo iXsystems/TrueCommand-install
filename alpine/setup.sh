@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # ===============================
 # TrueCommand Service setup script from iXsystems
 # https://github.com/ixsystems/truecommand-install
