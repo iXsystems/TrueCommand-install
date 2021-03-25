@@ -6,11 +6,11 @@
 
 NOTE: Replace [portnumber] and [sslportnumber] with the ports you wish to expose for TC access. 
 
-`docker run --restart unless-stopped --detach -v "[hostdirectory]:/data" -p [portnumber]:80 -p [sslportnumber]:443 ixsystems/truecommand`
+`docker run --pull=always --restart unless-stopped --detach -v "[hostdirectory]:/data" -p [portnumber]:80 -p [sslportnumber]:443 ixsystems/truecommand`
 
 Example:
 
-`docker run --restart unless-stopped --detach -v "C:/truecommand/:/data" -p 80:80 -p 443:443 ixsystems/truecommand`
+`docker run --pull=always --restart unless-stopped --detach -v "C:/truecommand/:/data" -p 80:80 -p 443:443 ixsystems/truecommand`
 
 If successful, you should see something similar to the following, and be able to access TrueCommand on http://localhost:80
 
