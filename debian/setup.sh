@@ -3,10 +3,6 @@
 # TrueCommand Service setup script from iXsystems
 # https://github.com/ixsystems/truecommand-install
 # ===============================
-# This does *not* startup the TrueCommand service
-# After this setup is run, the system/VM can be migrated 
-# to an offline or air-gapped network for startup
-# ===============================
 
 if [ $(id -u) -ne 0 ] ; then
   echo "This script needs to run with root permissions"
@@ -41,12 +37,11 @@ systemctl daemon-reload
 systemctl enable docker
 systemctl enable truecommand.service
 systemctl start docker
-
-# Pull the current latest version of the TrueCommand container (for offline VM deployments)
-docker pull ixsystems/truecommand:latest
+systemctl start truecommand.service
 
 # Now print out some quick instructions
-echo "The TrueCommand service is now ready to be used!"
+echo "The TrueCommand service is now running on ports 80/443!"
+echo "Manage the service with your system service-management utility:"
 echo "Examples:"
 echo "   \"systemctl start truecommand.service\" : Turn on the service"
 echo "   \"systemctl stop truecommand.service\" : Turn off the service"

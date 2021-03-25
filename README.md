@@ -3,6 +3,24 @@ TrueCommand is available as a docker container and can run on any OS where docke
 
 This repo provides some simple installation scripts for running a TrueCommand container as a system service, making it easier to start/stop/update the container as needed.
 
+## TrueCommand Service Notes
+The install routines from this repo does the following:
+
+* Setup a system service for running the TrueCommand docker container
+   * This service is enabled to auto-start on system boot
+   * Use your standard system service tools to manage the container (start, stop, restart, status, etc)
+* The TrueCommand image has the following configuration by default:
+   * Starts the UI on ports **80** (http) and **443** (https)
+   * Stores the TrueCommand database at "/data" on the host
+   * Will use the "latest" TrueCommand docker image (latest official release)
+
+### Changing the TrueCommand configuration
+1. Turn off the service
+2. Edit the ["/usr/bin/start-truecommand"](all/start-truecommand) file (as root).
+   * All of the configuration options are right at the top of the file for easy-modification.
+   * Save the new file when you are done
+3. Turn on the service
+
 ## Basic Process
 
 1. Install your OS (onto real hardware, or into a VM platform).

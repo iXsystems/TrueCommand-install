@@ -41,7 +41,8 @@ ln -s /etc/sv/docker /var/service
 ln -s /etc/sv/truecommand /var/service
 
 # Now print out some quick instructions
-echo "The TrueCommand service is now ready to be used!"
+echo "The TrueCommand service is now running on ports 80/443!"
+echo "Manage the service with your system service-management utility:"
 echo "Examples:"
 echo "   \"sv start truecommand\" : Turn on the service (not typically needed - starts automatically on boot"
 echo "   \"sv stop truecommand\" : Turn off the service"

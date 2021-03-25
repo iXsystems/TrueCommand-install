@@ -40,12 +40,11 @@ done
 rc-update add docker
 rc-update add truecommand
 rc-service docker start
-
-# Pull the current latest version of the TrueCommand container (for offline VM deployments)
-docker pull ixsystems/truecommand:latest
+rc-service truecommand start
 
 # Now print out some quick instructions
-echo "The TrueCommand service is now ready to be used!"
+echo "The TrueCommand service is now running on ports 80/443!"
+echo "Manage the service with your system service-management utility:"
 echo "Examples:"
 echo "   \"rc-service truecommand start\" : Turn on the service"
 echo "   \"rc-service truecommand stop\" : Turn off the service"
