@@ -11,9 +11,9 @@ fi
 
 # Install Docker
 if [ ! -e "/usr/bin/docker" ] ; then
-  echo "Installing Docker"
+  echo "Installing Docker..."
   apt-get install -yq docker.io
-  echo "DONE INSTALLING DOCKER"
+  echo "Done Installing docker"
   if [ ! -e "/usr/bin/docker" ] ; then
     echo "Error Installing docker package!!"
     exit 1
@@ -42,6 +42,7 @@ systemctl start docker
 systemctl start truecommand.service
 
 # Now print out some quick instructions
+echo "=============================================="
 echo "The TrueCommand service is now running on ports 80/443!"
 echo "Manage the service with your system service-management utility:"
 echo "Examples:"
@@ -49,3 +50,4 @@ echo "   \"systemctl start truecommand.service\" : Turn on the service"
 echo "   \"systemctl stop truecommand.service\" : Turn off the service"
 echo "   \"systemctl restart truecommand.service\" : Restart the service"
 echo "The service will automatically check for and apply updates every time it is turned on if your system is connected to the internet."
+echo "=============================================="
