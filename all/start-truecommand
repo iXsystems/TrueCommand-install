@@ -30,7 +30,7 @@ fi
 
 if [ "${1}" = "service" ] ; then
   #Do not detach from the process. Service needs to know when it is stopped and should be restarted
-  docker run  -v "${datadir}:/data"-p "${port}:80" -p "${sslport}:443" "ixsystems/truecommand:${version}"
+  docker run  -v "${datadir}:/data" -p "${port}:80" -p "${sslport}:443" "ixsystems/truecommand:${version}"
 
 else
   #Manual run of the start script. Detach from the docker process
