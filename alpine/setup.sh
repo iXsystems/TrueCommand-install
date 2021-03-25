@@ -3,10 +3,6 @@
 # TrueCommand Service setup script from iXsystems
 # https://github.com/ixsystems/truecommand-install
 # ===============================
-# This does *not* startup the TrueCommand service
-# After this setup is run, the system/VM can be migrated 
-# to an offline or air-gapped network for startup
-# ===============================
 
 if [ $(id -u) -ne 0 ] ; then
   echo "This script needs to run with root permissions"
@@ -43,6 +39,7 @@ rc-service docker start
 rc-service truecommand start
 
 # Now print out some quick instructions
+echo "=================================="
 echo "The TrueCommand service is now running on ports 80/443!"
 echo "Manage the service with your system service-management utility:"
 echo "Examples:"
@@ -50,3 +47,4 @@ echo "   \"rc-service truecommand start\" : Turn on the service"
 echo "   \"rc-service truecommand stop\" : Turn off the service"
 echo "   \"rc-service truecommand restart\" : Restart the service"
 echo "The service will automatically check for and apply updates every time it is turned on if your system is connected to the internet."
+echo "=================================="
