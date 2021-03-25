@@ -16,7 +16,8 @@ The install routines from this repo does the following:
 
 ### Changing the TrueCommand configuration
 1. Turn off the service
-2. Edit the ["/usr/bin/start-truecommand"](all/start-truecommand) file (as root).
+2. Edit the ["start-truecommand"](all/start-truecommand) file (as root).
+   * This could be in the "/usr/local/bin" or "/usr/bin" directory, based on your host OS.
    * All of the configuration options are right at the top of the file for easy-modification.
    * Save the new file when you are done
 3. Turn on the service
