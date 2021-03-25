@@ -10,7 +10,7 @@ if [ $(id -u) -ne 0 ] ; then
 fi
 
 # Install Docker
-if [ ! -e /bin/docker ] ; then
+if [ ! -e /usr/bin/docker ] ; then
   apt-get install docker.io
   if [ $? -ne 0 ] ; then
     echo "Error Installing docker package!!"
