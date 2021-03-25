@@ -23,7 +23,7 @@ The install routines from this repo does the following:
 
 ## Basic Process
 
-1. Install your OS (onto real hardware, or into a VM platform).
+1. Install your OS of choice (onto real hardware, or into a VM platform) - [Pre-Built Linux VM Images](https://www.linuxvmimages.com/).
 2. Download and run the "setup.sh" script from this repository for your particular OS.
 
 
