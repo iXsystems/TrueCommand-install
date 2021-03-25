@@ -11,7 +11,9 @@ fi
 
 # Install Docker
 if [ ! -e "/usr/bin/docker" ] ; then
-  apt-get install docker.io
+  echo "Installing Docker"
+  apt-get install -yq docker.io
+  echo "DONE INSTALLING DOCKER"
   if [ ! -e "/usr/bin/docker" ] ; then
     echo "Error Installing docker package!!"
     exit 1
