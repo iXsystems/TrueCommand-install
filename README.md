@@ -23,18 +23,20 @@ The install routines from this repo does the following:
 
 ## Basic Process
 
-1. Install your OS of choice (onto real hardware, or into a VM platform) - [Pre-Built Linux VM Images](https://www.linuxvmimages.com/).
+1. Install your OS of choice or setup a pre-built VM image in your virtualization platform of choice.
 2. Download and run the "setup.sh" script from this repository for your particular OS.
 
 
 ## Supported OS's 
 This list is *not* exhaustive, please feel free to submit updates for other OS's as desired.
 
+***Note:*** Many pre-built Linux VM Images can be found here: [linuxvmimages.com](https://www.linuxvmimages.com/).
+
 | OS | Images | Architecture | Instructions | Notes |
 |:---:|:---:|:---:|:---:|:---:|
 |Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | Uses systemd service file|
 |Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 |[Setup Guide](alpine) | Uses OpenRC service file|
-|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses Runit service file|
+|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses runit service file|
 
 ## Manual Setup
 The setup comes down to 3 pieces:
