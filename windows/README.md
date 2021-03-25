@@ -6,7 +6,7 @@
 
 NOTE: Replace [portnumber] and [sslportnumber] with the ports you wish to expose for TC access. 
 
-`docker run --detach -v "[hostdirectory]:/data" -p [portnumber]:80 -p [sslportnumber]:443 ixsystems/truecommand`
+`docker run --restart unless-stopped --detach -v "[hostdirectory]:/data" -p [portnumber]:80 -p [sslportnumber]:443 ixsystems/truecommand`
 
 Example:
 
