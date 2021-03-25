@@ -16,7 +16,7 @@ If successful, you should see something similar to the following, and be able to
 
 Docker Deployment:
 
-![image](https://user-images.githubusercontent.com/1933088/112497995-7dae1380-8d5c-11eb-98a9-2a54015695e0.png)
+![image](https://user-images.githubusercontent.com/1933088/112502019-17c38b00-8d60-11eb-8294-9fbaeef41e04.png)
 
 Initial Login Screen:
 
