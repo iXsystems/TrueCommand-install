@@ -3,7 +3,25 @@ TrueCommand is available as a docker container and can run on any OS where docke
 
 This repo provides some simple installation scripts for running a TrueCommand container as a system service, making it easier to start/stop/update the container as needed.
 
-## TrueCommand Service Notes
+## Installation Instructions
+1. Install your OS of choice or setup a pre-built VM image in your virtualization platform of choice.
+2. Follow the "Setup Guide" link below for your OS. Most setups are just 1-line commands.
+
+### Supported OS's
+This list is *not* exhaustive, please feel free to submit updates for other OS's as desired.
+
+***Note:*** Many pre-built Linux VM Images can be found here: [linuxvmimages.com](https://www.linuxvmimages.com/).
+
+| OS | VM Images | Architecture | Instructions | Notes |
+|:---:|:---:|:---:|:---:|:---:|
+|Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | Uses systemd service file|
+|Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 |[Setup Guide](alpine) | Uses OpenRC service file|
+|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses runit service file|
+|Windows| [Download Site](https://www.microsoft.com/en-us/software-download/windows10) | x64 |[Setup Guide](windows) | |
+
+
+## Managing your TrueCommand Service
+### TrueCommand Service Notes
 The install routines from this repo does the following:
 
 * Setup a system service for running the TrueCommand docker container
@@ -22,26 +40,8 @@ The install routines from this repo does the following:
    * Save the new file when you are done
 3. Turn on the service
 
-## Basic Process
-
-1. Install your OS of choice or setup a pre-built VM image in your virtualization platform of choice.
-2. Download and run the "setup.sh" script from this repository for your particular OS.
-
-
-## Supported OS's 
-This list is *not* exhaustive, please feel free to submit updates for other OS's as desired.
-
-***Note:*** Many pre-built Linux VM Images can be found here: [linuxvmimages.com](https://www.linuxvmimages.com/).
-
-| OS | Images | Architecture | Instructions | Notes |
-|:---:|:---:|:---:|:---:|:---:|
-|Debian Linux| [Download Site](https://www.debian.org/CD/http-ftp/) | amd64 | [Setup Guide](debian) | Uses systemd service file|
-|Alpine Linux| [Download Site](https://alpinelinux.org/downloads/) | x86_64 |[Setup Guide](alpine) | Uses OpenRC service file|
-|Void Linux| [Download Site](https://voidlinux.org/download/) | x86_64 |[Setup Guide](void) | Uses runit service file|
-|Windows| [Download Site](https://www.microsoft.com/en-us/software-download/windows10) | x64 |[Setup Guide](windows) | |
-
-## Manual Setup
-The setup comes down to 3 pieces:
+## Creating new OS setup scripts
+For creating a setup script for some other OS, the setup comes down to 3 pieces:
 
 1. Ensure that docker is installed
 2. Install the "start-truecommand" file from this repository [all/start-truecommand](all/start-truecommand) and a service file for your OS
