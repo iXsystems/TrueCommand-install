@@ -17,7 +17,14 @@ if [ ! -e /usr/bin/docker ] ; then
     exit 1
   fi
 fi
-
+# Install Bash
+if [ ! -e /bin/bash ] ; then
+  apk add bash
+    if [ $? -ne 0 ] ; then
+    echo "Error Installing bash package!!"
+    exit 1
+  fi
+fi
 # Install the TrueCommand service file and startup script
 filelist="all/start-truecommand:/usr/local/bin/start-truecommand alpine/truecommand.openrc:/etc/init.d/truecommand"
 for _file in ${filelist}
